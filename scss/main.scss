@@ -1,0 +1,53 @@
+@use '../node_modules/bootstrap/scss/bootstrap.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: hsl(212, 45%, 89%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .ccard {
+    border-radius: 1.3rem;
+    background: hsl(0, 0%, 100%);
+    box-shadow: 0 2px 1rem rgba(#000, 0.2);
+    margin: 0 2rem;
+    max-width: 311px;
+
+    &__header {
+      margin: 1rem;
+      display: flex;
+      justify-content: center;
+
+      .img {
+        border-radius: 1rem;
+        object-fit: contain;
+      }
+    }
+
+    &__body {
+      text-align: center;
+      font-family: 'Outfit', sans-serif;
+      margin: 1.5rem 2rem 2.5rem 2rem;
+
+      &-title {
+        color: hsl(218, 44%, 22%);
+        font-weight: 700;
+        margin-bottom: 0.8rem;
+      }
+
+      &-text {
+        color: hsl(220, 15%, 55%);
+        font-weight: 400;
+        font-size: 15px;
+      }
+    }
+  }
+}
